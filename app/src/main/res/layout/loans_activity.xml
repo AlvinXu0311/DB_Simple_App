@@ -1,0 +1,85 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/loans_page_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loans Summary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Total Loan Amount -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#EFEFEF">
+
+
+
+            <TextView
+                android:id="@+id/total_loan_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#6200EE" />
+        </LinearLayout>
+
+        <!-- Loans List Title -->
+        <TextView
+            android:id="@+id/loans_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loan Details"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Loans List -->
+        <LinearLayout
+            android:id="@+id/loans_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Loan Card Template -->
+            <!-- This will be dynamically populated -->
+
+        </LinearLayout>
+
+        <!-- Empty Message -->
+        <TextView
+            android:id="@+id/no_loans_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No loans available."
+            android:textSize="16sp"
+            android:textColor="#777777"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

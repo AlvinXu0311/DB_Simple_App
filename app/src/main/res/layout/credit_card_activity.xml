@@ -1,0 +1,74 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit Card Details"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Balance Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/credit_card_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Balance: $0.00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#6200EE"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Recent Transactions Section Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recent Transactions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Transactions List Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <ListView
+                android:id="@+id/recent_credit_card_transactions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#CCCCCC"
+                android:dividerHeight="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
